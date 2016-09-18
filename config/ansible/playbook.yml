@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  become: true
+  connection: local
+  vars:
+  roles:
+  tasks:
+    - name: Updating APK Cache
+      apk:
+        update_cache: yes
+
+    - name: Installing JRE
+      apk:
+        name: "openjdk{{ openjdk_jre_version }}-jre"
+        state: "present"
