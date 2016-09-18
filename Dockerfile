@@ -3,7 +3,7 @@ FROM mrlesmithjr/alpine-ansible
 MAINTAINER Larry Smith Jr. <mrlesmithjr@gmail.com>
 
 # Define JRE Version
-ENV OPENJDK_JRE_VERSION="8"
+ENV OPENJDK_JRE_VERSION="7"
 
 # Copy Ansible Related Files
 COPY config/ansible/ /
